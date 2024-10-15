@@ -5,7 +5,7 @@
 	"main": "dist/index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"analyze-sql": "ts-node ./index.ts",
+		"analyze-queries": "ts-node ./index.ts",
 		"seed": "ts-node ./scripts/seed.ts"
 	},
 	"keywords": [],
