@@ -1,4 +1,6 @@
 import { Pool } from 'pg';
+import * as fs from 'fs';
+import * as path from 'path';
 
 export const analyzeQueries = async (dbPool: Pool) => {
 	const queries = [
@@ -36,14 +38,64 @@ export const analyzeQueries = async (dbPool: Pool) => {
 	];
 
 	const client = await dbPool.connect();
+
+	const report: Record<string, any> = {};
+	const reportDate = new Date().toISOString();
+
+	report[reportDate] = {
+		'Planning Time': {},
+		'Execution Time': {},
+	};
+
 	try {
 		for (const query of queries) {
 			console.time(query.name);
 			const result = await client.query(query.sql);
 			console.timeEnd(query.name);
-			console.log(`${query.name} execution plan:`);
+
+			let planningTime = '';
+			let executionTime = '';
+
+			result.rows.forEach((row) => {
+				const queryPlan = row['QUERY PLAN'];
+
+				if (queryPlan.includes('Planning Time')) {
+					planningTime =
+						queryPlan.match(/Planning Time: (\d+\.\d+) ms/)?.[1] ?? '';
+				}
+				if (queryPlan.includes('Execution Time')) {
+					executionTime =
+						queryPlan.match(/Execution Time: (\d+\.\d+) ms/)?.[1] ?? '';
+				}
+			});
+
 			result.rows.forEach((row) => console.log(row['QUERY PLAN']));
+			console.log('\n');
+			console.log('\n');
+
+			report[reportDate]['Planning Time'][query.name] = planningTime;
+			report[reportDate]['Execution Time'][query.name] = executionTime;
 		}
+
+		const projectRootDir = process.cwd();
+		const reportDir = path.join(projectRootDir, 'docs');
+		const reportFilePath = path.join(reportDir, 'reports.json');
+
+		if (!fs.existsSync(reportDir)) {
+			fs.mkdirSync(reportDir, { recursive: true });
+		}
+
+		let existingReports = {};
+		if (fs.existsSync(reportFilePath)) {
+			const fileContent = fs.readFileSync(reportFilePath, 'utf-8');
+			existingReports = JSON.parse(fileContent);
+		}
+
+		const updatedReports = { ...existingReports, ...report };
+
+		fs.writeFileSync(reportFilePath, JSON.stringify(updatedReports, null, 2));
+
+		console.log('Query analysis reports saved successfully.');
 	} catch (e) {
 		throw e;
 	} finally {

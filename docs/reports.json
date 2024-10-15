@@ -1,0 +1,186 @@
+{
+	"2024-10-15T08:54:00.267Z": {
+		"Planning Time": {
+			"1 - Normalized Query": "4.904",
+			"2 - Denormalized Query": "0.192"
+		},
+		"Execution Time": {
+			"1 - Normalized Query": "26.839",
+			"2 - Denormalized Query": "0.156"
+		}
+	},
+	"2024-10-15T09:03:43.947Z": {
+		"Planning Time": {
+			"1 - Normalized Query": "2.672",
+			"2 - Denormalized Query": "0.193"
+		},
+		"Execution Time": {
+			"1 - Normalized Query": "13.171",
+			"2 - Denormalized Query": "0.146"
+		}
+	},
+	"2024-10-15T09:08:48.925Z": {
+		"Planning Time": {
+			"1 - Normalized Query": "3.636",
+			"2 - Denormalized Query": "0.194"
+		},
+		"Execution Time": {
+			"1 - Normalized Query": "11.217",
+			"2 - Denormalized Query": "0.319"
+		}
+	},
+	"2024-10-15T09:10:43.654Z": {
+		"Planning Time": {
+			"1 - Normalized Query": "4.367",
+			"2 - Denormalized Query": "0.170"
+		},
+		"Execution Time": {
+			"1 - Normalized Query": "11.175",
+			"2 - Denormalized Query": "0.135"
+		}
+	},
+	"2024-10-15T09:11:37.921Z": {
+		"Planning Time": {
+			"1 - Normalized Query": "2.712",
+			"2 - Denormalized Query": "0.186"
+		},
+		"Execution Time": {
+			"1 - Normalized Query": "11.116",
+			"2 - Denormalized Query": "0.143"
+		}
+	},
+	"2024-10-15T09:11:59.959Z": {
+		"Planning Time": {
+			"1 - Normalized Query": "2.536",
+			"2 - Denormalized Query": "0.199"
+		},
+		"Execution Time": {
+			"1 - Normalized Query": "10.995",
+			"2 - Denormalized Query": "0.136"
+		}
+	},
+	"2024-10-15T09:19:53.878Z": {
+		"Planning Time": {
+			"1 - Normalized Query": "4.500",
+			"2 - Denormalized Query": "0.165"
+		},
+		"Execution Time": {
+			"1 - Normalized Query": "11.880",
+			"2 - Denormalized Query": "0.132"
+		}
+	},
+	"2024-10-15T09:22:42.363Z": {
+		"Planning Time": {
+			"1 - Normalized Query": "4.659",
+			"2 - Denormalized Query": "0.181"
+		},
+		"Execution Time": {
+			"1 - Normalized Query": "11.541",
+			"2 - Denormalized Query": "0.168"
+		}
+	},
+	"2024-10-15T10:39:04.000Z": {
+		"Planning Time": {
+			"1 - Normalized Query": "3.400",
+			"2 - Denormalized Query": "0.190"
+		},
+		"Execution Time": {
+			"1 - Normalized Query": "12.246",
+			"2 - Denormalized Query": "0.214"
+		}
+	},
+	"2024-10-15T10:39:29.150Z": {
+		"Planning Time": {
+			"1 - Normalized Query": "4.320",
+			"2 - Denormalized Query": "0.157"
+		},
+		"Execution Time": {
+			"1 - Normalized Query": "11.417",
+			"2 - Denormalized Query": "0.155"
+		}
+	},
+	"2024-10-15T10:40:36.767Z": {
+		"Planning Time": {
+			"1 - Normalized Query": "5.924",
+			"2 - Denormalized Query": "0.197"
+		},
+		"Execution Time": {
+			"1 - Normalized Query": "10.413",
+			"2 - Denormalized Query": "0.145"
+		}
+	},
+	"2024-10-15T10:49:16.783Z": {
+		"Planning Time": {
+			"1 - Normalized Query": "2.643",
+			"2 - Denormalized Query": "0.189"
+		},
+		"Execution Time": {
+			"1 - Normalized Query": "11.104",
+			"2 - Denormalized Query": "0.159"
+		},
+		"Total Cost": {
+			"1 - Normalized Query": "0.16",
+			"2 - Denormalized Query": "617.30"
+		}
+	},
+	"2024-10-15T10:52:16.409Z": {
+		"Planning Time": {
+			"1 - Normalized Query": "4.920",
+			"2 - Denormalized Query": "0.172"
+		},
+		"Execution Time": {
+			"1 - Normalized Query": "11.507",
+			"2 - Denormalized Query": "0.148"
+		}
+	},
+	"2024-10-15T10:53:53.229Z": {
+		"Planning Time": {
+			"1 - Normalized Query": "2.489",
+			"2 - Denormalized Query": "0.182"
+		},
+		"Execution Time": {
+			"1 - Normalized Query": "11.662",
+			"2 - Denormalized Query": "0.162"
+		}
+	},
+	"2024-10-15T10:54:44.758Z": {
+		"Planning Time": {
+			"1 - Normalized Query": "2.665",
+			"2 - Denormalized Query": "0.306"
+		},
+		"Execution Time": {
+			"1 - Normalized Query": "10.475",
+			"2 - Denormalized Query": "0.205"
+		}
+	},
+	"2024-10-15T10:58:06.255Z": {
+		"Planning Time": {
+			"1 - Normalized Query": "2.472",
+			"2 - Denormalized Query": "0.182"
+		},
+		"Execution Time": {
+			"1 - Normalized Query": "15.537",
+			"2 - Denormalized Query": "0.161"
+		}
+	},
+	"2024-10-15T11:10:59.114Z": {
+		"Planning Time": {
+			"1 - Normalized Query": "4.287",
+			"2 - Denormalized Query": "0.186"
+		},
+		"Execution Time": {
+			"1 - Normalized Query": "9.846",
+			"2 - Denormalized Query": "0.142"
+		}
+	},
+	"2024-10-16T08:27:13.756Z": {
+		"Planning Time": {
+			"1 - Normalized Query": "3.051",
+			"2 - Denormalized Query": "0.179"
+		},
+		"Execution Time": {
+			"1 - Normalized Query": "13.756",
+			"2 - Denormalized Query": "0.219"
+		}
+	}
+}
